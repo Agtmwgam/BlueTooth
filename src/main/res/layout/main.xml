@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:orientation="vertical"
+                android:background="@drawable/backgroup1">
+
+    <LinearLayout
+        android:id="@+id/LinearLayout01"
+        android:layout_width="wrap_content"
+        android:visibility="invisible"
+        android:layout_height="1dp">
+        <TextView
+            android:id="@+id/TextView01"
+            android:layout_width="100dip"
+            android:visibility="invisible"
+            android:layout_height="wrap_content"
+            android:text="手机蓝牙开关"></TextView>
+
+        <ToggleButton
+            android:id="@+id/tbtnSwitch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="invisible"
+            android:text="蓝牙开关"></ToggleButton>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/LinearLayout02"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="40dp">
+
+        <Button
+            android:id="@+id/btnDis"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="本机蓝牙可见"></Button>
+        <Button
+            android:id="@+id/btnSearch"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="搜索设备"></Button>
+
+        <Button
+            android:id="@+id/btnExit"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="退出程序"></Button>
+    </LinearLayout>
+
+
+    <ListView
+        android:id="@+id/lvDevices"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+    </ListView>
+
+
+</LinearLayout>
